@@ -12,7 +12,7 @@ const initialState = {
     password: '',
     confirmPassword: '',
     phoneNumber: '',
-    avatarURL: '',
+    avatarURL: 'https://ibb.co/S5mc2gg',
 }
 
 const Auth = () => {
@@ -28,7 +28,7 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL } = form;
 
-        const URL = 'https://campusbook-server.vercel.app/auth';
+        const URL = 'https://campusbook-ict4d.vercel.app/auth';
         // http://localhost:5000/posts
         // const URL = 'https://medical-pager.herokuapp.com/auth';
 
@@ -94,7 +94,7 @@ const Auth = () => {
                                 />
                             </div>
                         )}
-                        {isSignup && (
+                        {/* {isSignup && (
                             <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="avatarURL">Avatar URL</label>
                                 <input 
@@ -105,7 +105,7 @@ const Auth = () => {
                                     required
                                 />
                             </div>
-                        )}
+                        )} */}
                         <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="password">Password</label>
                                 <input 

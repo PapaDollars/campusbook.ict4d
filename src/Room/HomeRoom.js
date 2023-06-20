@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import conf from "../assets/conf.jpg";
 import Navbar from "../components/Navbar";
 
-const HomeChat = () => {
+const HomeRoom = () => {
   const [RoomCode, setRoomCode] = useState("");
   const navigate = useNavigate();
 
@@ -66,4 +66,4 @@ const HomeChat = () => {
   );
 };
 
-export default HomeChat;
+export default HomeRoom;
