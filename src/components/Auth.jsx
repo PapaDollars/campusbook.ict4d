@@ -28,7 +28,7 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL } = form;
 
-        const URL = 'http://localhost:5000/auth';
+        const URL = 'https://campusbook-server.vercel.app/auth';
         // http://localhost:5000/posts
         // const URL = 'https://medical-pager.herokuapp.com/auth';
 
