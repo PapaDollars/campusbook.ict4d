@@ -12,7 +12,7 @@ const initialState = {
     password: '',
     confirmPassword: '',
     phoneNumber: '',
-    avatarURL: 'https://ibb.co/S5mc2gg',
+    avatarURL: '',
 }
 
 const Auth = () => {
@@ -26,7 +26,7 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const { username, password, phoneNumber, avatarURL } = form;
+        const { username, password, phoneNumber, avatarURL ='https://ibb.co/S5mc2gg' } = form;
 
         const URL = 'http://localhost:5000/auth';
         // http://localhost:5000/posts

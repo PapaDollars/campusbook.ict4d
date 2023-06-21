@@ -3,8 +3,6 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet,
 } from "react-router-dom";
 import "./App.css";
@@ -13,7 +11,7 @@ import HomeRoom from "./Room/HomeRoom";
 import Room from "./Room/Room";
 import ErrorPage from "./routes/ErrorPage";
 import Epreuves from "./Epreuves/Epreuves";
-import { Auth } from "./components";
+// import { Auth } from "./components";
 
 const AppLayout = () => {
     return(
