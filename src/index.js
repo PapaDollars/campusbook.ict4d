@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
+  Route,
+  Link,
   Outlet,
 } from "react-router-dom";
 import "./App.css";
@@ -28,10 +30,6 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Auth/>,
-              },
-              {
-                path: "home",
                 element: <Home/>,
               },
               {
