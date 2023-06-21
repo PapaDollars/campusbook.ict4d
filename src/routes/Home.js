@@ -4,9 +4,7 @@ import { Chat } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 import { ChannelListContainer, ChannelContainer, Auth } from '../components';
 import Navbar from "../components/Navbar";
-
 import 'stream-chat-react/dist/css/index.css';
-// import CSS HERE .
 
 const cookies = new Cookies();
 

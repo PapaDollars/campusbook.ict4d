@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
+import Navbar from "../components/Navbar";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 
 const Room = () => {
@@ -13,7 +13,7 @@ const Room = () => {
       serverSecret,
       roomID,
       Date.now().toString(),
-      "andrei"
+      "Your_name"
     );
     const zp = ZegoUIKitPrebuilt.create(kitToken);
 
@@ -25,7 +25,12 @@ const Room = () => {
     });
   };
 
-  return <div ref={meeting} style={{ width: "100vw", height: "100vh" }}></div>;
+  return (
+    <>
+    <Navbar />
+    <div ref={meeting} style={{ width: "100vw", height: "88vh" }}></div>
+  </>
+  )
 };
 
 export default Room;

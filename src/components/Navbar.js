@@ -2,7 +2,6 @@ import React, {useState} from "react"
 import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import "./Navbar.css"
-import {GiRocketThruster} from "react-icons/gi"
 import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons/lib"
 import Cookies from 'universal-cookie';
@@ -47,7 +46,7 @@ function Navbar(){
                     </li>
 
                     <li className="nav-item">
-                        <NavLink to="/homeChat" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        <NavLink to="/homeRoom" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                             Room</NavLink>
                         
                     </li>

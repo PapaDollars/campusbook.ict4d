@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import conf from "../assets/conf.jpg";
 import Navbar from "../components/Navbar";
 
 const HomeRoom = () => {
@@ -55,9 +54,9 @@ const HomeRoom = () => {
             </div>
             <button
               type="submit"
-              className=" bg-blue-500 hover:bg-blue-400 duration-100 ease-out font-bold w-[5rem] md:w-[7rem] rounded-full py-[5px] md:py-[7px] mt-2 md:mt-4 "
+              className="btn-button btn-blue "
             >
-              Go
+              Go room
             </button>
           </form>
         </div>
