@@ -28,7 +28,7 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL ='https://ibb.co/S5mc2gg' } = form;
 
-        const URL = 'https://localhost:10000/auth';
+        const URL = 'https://campusbook-api.onrender.com/auth';
         // http://localhost:5000/posts
         // const URL = 'https://medical-pager.herokuapp.com/auth';
 
