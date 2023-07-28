@@ -62,13 +62,15 @@ const Auth = () => {
                     <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className="auth__form-container_fields-content_input">
-                                <label htmlFor="fullName">Full Name</label>
+                                <label for="exampleInputEmail1" class="form-label" htmlFor="fullName">Address mail</label>
                                 <input 
                                     name="fullName" 
-                                    type="text"
-                                    placeholder="Full Name"
+                                    type="email"
+                                    placeholder="example@gmail.com"
                                     onChange={handleChange}
                                     required
+                                    class="form-control" id="exampleInputEmail1" 
+                                    aria-describedby="emailHelp"
                                 />
                             </div>
                         )}
