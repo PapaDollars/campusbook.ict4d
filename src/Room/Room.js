@@ -13,7 +13,7 @@ const Room = () => {
       serverSecret,
       roomID,
       Date.now().toString(),
-      "Your_name"
+      "alpha"
     );
     const zp = ZegoUIKitPrebuilt.create(kitToken);
 
@@ -25,12 +25,12 @@ const Room = () => {
     });
   };
 
-  return (
+  return ( 
     <>
-    <Navbar />
-    <div ref={meeting} style={{ width: "100vw", height: "88vh" }}></div>
-  </>
-  )
+      <Navbar />
+      <div ref={meeting} style={{ width: "100vw", height: "100vh" }}></div>;
+    </>
+  );
 };
 
 export default Room;

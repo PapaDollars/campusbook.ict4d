@@ -62,7 +62,7 @@ const Auth = () => {
                     <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className="auth__form-container_fields-content_input">
-                                <label for="exampleInputEmail1" class="form-label" htmlFor="fullName">Address mail</label>
+                                <label htmlFor="fullName">Address mail</label>
                                 <input 
                                     name="fullName" 
                                     type="email"
